@@ -5,18 +5,13 @@ import java.util.Collections;
 import java.util.List;
 
 public class MyList<T extends Number & Comparable<? super T>> {
-    public List<T> lisT = new ArrayList<T>();
+    private List<T> lisT = new ArrayList<>();
 
     void add(T value) {
-
         lisT.add(value);
     }
 
-    public List<T> returnList() {
-        return this.lisT;
-    }
-
-    public T returnLargestValue() {
+    protected T returnLargestValue() {
         if (lisT.isEmpty()) {
             System.out.println("List is empty");
         } else {
@@ -25,7 +20,7 @@ public class MyList<T extends Number & Comparable<? super T>> {
         return null;
     }
 
-    public T returnSmallestValue() {
+    protected T returnSmallestValue() {
         if (lisT.isEmpty()) {
             System.out.println("List is empty");
         } else {

@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 class Task3 {
-    public static void main(String[] args) {
-        List<Integer> array1 = new ArrayList();
-        List<Integer> array2 = new ArrayList();
+     static void main(String[] args) {
+        List<Integer> array1 = new ArrayList<>();
+        List<Integer> array2 = new ArrayList<>();
 
         array1.add(2);
         array1.add(3);

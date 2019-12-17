@@ -4,10 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Task3 {
-    public Task3() {
-    }
-
+class Task3 {
     public static void main(String[] args) {
         List<Integer> array1 = new ArrayList();
         List<Integer> array2 = new ArrayList();

@@ -3,9 +3,7 @@ package HW6;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Task2 {
-    public Task2() {
-    }
+class Task2 {
 
     public static void main(String[] args) {
         List<String> fruits = new ArrayList();
@@ -26,6 +24,5 @@ public class Task2 {
                 System.out.println("That value not present");
             }
         }
-
     }
 }

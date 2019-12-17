@@ -2,6 +2,6 @@ package HW5;
 
 public class Main {
     public static void main(String[] args) {
-        new FullList().fillingList();
+        new FullList().start();
     }
 }

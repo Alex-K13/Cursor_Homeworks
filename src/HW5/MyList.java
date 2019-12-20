@@ -11,7 +11,7 @@ public class MyList<T extends Number & Comparable<? super T>> {
         lisT.add(value);
     }
 
-    protected T returnLargestValue() {
+    T returnLargestValue() {
         if (lisT.isEmpty()) {
             System.out.println("List is empty");
         } else {
@@ -20,7 +20,7 @@ public class MyList<T extends Number & Comparable<? super T>> {
         return null;
     }
 
-    protected T returnSmallestValue() {
+    T returnSmallestValue() {
         if (lisT.isEmpty()) {
             System.out.println("List is empty");
         } else {
@@ -28,6 +28,4 @@ public class MyList<T extends Number & Comparable<? super T>> {
         }
         return null;
     }
-
 }
-

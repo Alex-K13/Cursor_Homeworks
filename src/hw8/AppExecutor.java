@@ -17,6 +17,7 @@ public class AppExecutor {
 
         System.out.println("task/3 ");
         new FilmsCatalog().calculateAveragePrice();
+        new FilmsCatalog().countFilmForGenre();
         System.out.println("\n");
 
 

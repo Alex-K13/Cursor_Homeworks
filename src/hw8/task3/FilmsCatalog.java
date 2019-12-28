@@ -1,8 +1,6 @@
 package hw8.task3;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -11,6 +9,8 @@ import static java.util.stream.Collectors.groupingBy;
 public class FilmsCatalog {
     List<Film> firstFilmsCatalog = new ArrayList<>();
     List<Film> secondFilmsCatalog = new ArrayList<>();
+    List<Film> allFilms = new ArrayList<>();
+    Map<String, Double> filmFilter = new HashMap<>();
 
     public void fillFilmsCollection() {
         firstFilmsCatalog.add(new Film("comedy", 120));
@@ -27,18 +27,25 @@ public class FilmsCatalog {
 
     }
 
-    public void calculateAveragePrice() {
+    List<Film> addTwoCollection() {
         fillFilmsCollection();
-        List<Film> allFilms = Stream.concat(firstFilmsCatalog.stream(), secondFilmsCatalog.stream())
+        allFilms = Stream.concat(firstFilmsCatalog.stream(), secondFilmsCatalog.stream())
                 .collect(Collectors.toList());
+        return allFilms;
+    }
 
-        Map<String, Double> filmFilter = allFilms.stream()
+    public void calculateAveragePrice() {
+        addTwoCollection();
+        filmFilter = allFilms.stream()
                 .collect(Collectors.groupingBy(Film::getGenre,
                         Collectors.averagingDouble(Film::getPrice)));
-
         filmFilter.forEach((genre, price) -> System.out.println(genre + " genre: " + Math.round(price) + " uah."));
         System.out.println();
 
+    }
+
+    public void countFilmForGenre() {
+        addTwoCollection();
         Map<String, Long> countFilmsForGenre = allFilms.stream()
                 .collect(groupingBy(Film::getGenre, Collectors.counting()));
 

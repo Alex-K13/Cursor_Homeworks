@@ -1,4 +1,4 @@
-package hw8.task1;
+package hw8.lambda;
 
 public interface Supplier {
     String get();

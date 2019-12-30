@@ -1,4 +1,4 @@
-package hw8.task3;
+package hw8.movie;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -27,7 +27,7 @@ public class FilmsCatalog {
 
     }
 
-    List<Film> addTwoCollection() {
+    public List<Film> addTwoCollection() {
         fillFilmsCollection();
         allFilms = Stream.concat(firstFilmsCatalog.stream(), secondFilmsCatalog.stream())
                 .collect(Collectors.toList());

@@ -1,4 +1,4 @@
-package hw8.task2;
+package hw8.user;
 
 import java.time.LocalDate;
 

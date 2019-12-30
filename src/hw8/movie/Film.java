@@ -1,4 +1,4 @@
-package hw8.task3;
+package hw8.movie;
 
 public class Film {
 

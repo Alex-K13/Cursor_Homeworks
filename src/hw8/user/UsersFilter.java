@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class UsersDistribution {
+public class UsersFilter {
 
     private final static LocalDate today = LocalDate.of(2019, 12, 26);
     List<User> users = new ArrayList<>();

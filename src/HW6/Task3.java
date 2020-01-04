@@ -28,3 +28,5 @@ class Task3 {
                 .filter(array2::contains));
     }
 }
+
+

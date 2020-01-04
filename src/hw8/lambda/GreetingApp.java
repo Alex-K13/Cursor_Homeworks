@@ -1,6 +1,6 @@
 package hw8.lambda;
 
-public class LambdaApp {
+public class GreetingApp {
 
     public void outPhrase() {
 

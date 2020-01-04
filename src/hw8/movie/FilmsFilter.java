@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.groupingBy;
 
-public class FilmsCatalog {
+public class FilmsFilter {
     List<Film> firstFilmsCatalog = new ArrayList<>();
     List<Film> secondFilmsCatalog = new ArrayList<>();
     List<Film> allFilms = new ArrayList<>();
@@ -27,11 +27,10 @@ public class FilmsCatalog {
 
     }
 
-    public List<Film> addTwoCollection() {
+    public void addTwoCollection() {
         fillFilmsCollection();
         allFilms = Stream.concat(firstFilmsCatalog.stream(), secondFilmsCatalog.stream())
                 .collect(Collectors.toList());
-        return allFilms;
     }
 
     public void calculateAveragePrice() {

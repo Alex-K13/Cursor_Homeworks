@@ -7,6 +7,12 @@ public class User {
     private LocalDate loginDate;
     private String team;
 
+    User(String email, LocalDate loginDate, String team) {
+        this.email = email;
+        this.loginDate = loginDate;
+        this.team = team;
+    }
+
     String getEmail() {
         return email;
     }
@@ -17,11 +23,5 @@ public class User {
 
     String getTeam() {
         return team;
-    }
-
-    public User(String email, LocalDate loginDate, String team) {
-        this.email = email;
-        this.loginDate = loginDate;
-        this.team = team;
     }
 }

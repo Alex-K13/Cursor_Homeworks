@@ -1,16 +1,16 @@
 package hw8.movie;
 
 public class Film {
-    private double price;
+    private double ticketPrice;
     private String genre;
 
-    Film(String genre, double price) {
-        this.price = price;
+    Film(String genre, double ticketPrice) {
+        this.ticketPrice = ticketPrice;
         this.genre = genre;
     }
 
-    double getPrice() {
-        return (price);
+    double getTicketPrice() {
+        return (ticketPrice);
     }
 
     public String getGenre() {

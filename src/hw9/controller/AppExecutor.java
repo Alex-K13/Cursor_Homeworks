@@ -1,4 +1,4 @@
-package hw9;
+package hw9.controller;
 
 import hw9.divisions.SafeDivision;
 import hw9.exeptions.CaughtExceptions;

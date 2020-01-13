@@ -1,4 +1,4 @@
-package hw8;
+package hw8.controller;
 
 import hw8.lambda.GreetingApp;
 import hw8.movie.FilmsFilter;

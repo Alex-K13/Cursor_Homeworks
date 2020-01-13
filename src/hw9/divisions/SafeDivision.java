@@ -14,10 +14,10 @@ public class SafeDivision {
         int a = this.scan.nextInt();
         System.out.print("write B : ");
         int b = this.scan.nextInt();
-        if (b != 0) {
-            System.out.println("A/B = " + a / b);
-        } else {
+        if (b == 0) {
             throw new ArithmeticException("The divisor cannot be zero");
+        } else {
+            System.out.println("A/B = " + a / b);
         }
     }
 

@@ -2,12 +2,12 @@ package hw9.rethrown;
 
 public class RethrownException {
 
-    private void throwsRuntimeException() throws Exception {
-        throw new Exception(" RuntimeException throw from my first method ");
+    private void throwsException() throws Exception {
+        throw new Exception("Exception was thrown ");
     }
 
     private void callThrowsException() throws Exception {
-        throwsRuntimeException();
+        throwsException();
     }
 
     public void throwsAllException() {

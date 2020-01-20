@@ -1,34 +1,37 @@
 package hw9.divisions;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class SafeDivision {
-    Scanner scan;
+    int divided;
+    Scanner scan = new Scanner(System.in);
 
-    public SafeDivision() {
-        this.scan = new Scanner(System.in);
-    }
-
-    private void divisionTheValues() {
-        System.out.print("write A : ");
-        int a = this.scan.nextInt();
-        System.out.print("write B : ");
-        int b = this.scan.nextInt();
-        if (b == 0) {
-            throw new ArithmeticException("The divisor cannot be zero");
-        } else {
-            System.out.println("A/B = " + a / b);
-        }
-    }
-
-    public void showResult() {
+    public void runDivision() {
         try {
-            this.divisionTheValues();
-        } catch (ArithmeticException var2) {
-            System.err.println(var2.getMessage());
-            System.out.println("Write another B ");
-            this.divisionTheValues();
+            System.out.print("write  divided A : ");
+            this.divided = scan.nextInt();
+            printResult();
+        } catch (InputMismatchException e) {
+            System.out.println("Divided incorrect. Try again");
+            scan.next();
+            runDivision();
         }
+    }
 
+    public void printResult() {
+        try {
+            System.out.print("write divider B : ");
+            double divider = scan.nextInt();
+            if (divider == 0) {
+                System.out.println("Divider cannot be zero. Try again.");
+                throw new ArithmeticException();
+            }
+            System.out.println("Divisions = " + divided / divider);
+        } catch (ArithmeticException e) {
+            printResult();
+        }
     }
 }
+
+

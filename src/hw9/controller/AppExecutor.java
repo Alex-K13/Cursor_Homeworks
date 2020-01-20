@@ -13,7 +13,7 @@ public class AppExecutor {
         new CaughtExceptions().catchIOException();
         new CaughtExceptions().catchNullPointer();
         //task2
-        new SafeDivision().showResult();
+        new SafeDivision().runDivision();
         //task3
         new RethrownException().throwsAllException();
 

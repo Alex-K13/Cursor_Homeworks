@@ -3,7 +3,7 @@ package hw10.controller;
 import hw10.module.Device;
 
 public class TVRemote implements Remote {
-    Device device;
+     Device device;
 
     public TVRemote(Device device) {
         this.device = device;

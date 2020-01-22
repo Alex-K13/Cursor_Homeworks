@@ -10,5 +10,5 @@ public class Executor {
         tvRemote.mute();
         tvRemote.channelUp();
         device.printStatus();
-    }
+            }
 }

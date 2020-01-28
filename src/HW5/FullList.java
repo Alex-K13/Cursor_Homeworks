@@ -5,7 +5,6 @@ public class FullList {
         MyList<Integer> arrayList = new MyList<>();
 
         fillingList(arrayList);
-
         System.out.println("Maximum Int Value = " + arrayList.returnLargestValue());
         System.out.println("Minimum Int Value = " + arrayList.returnSmallestValue());
     }

@@ -18,7 +18,6 @@ class Task2 {
         for (int i = 0; i < fruits.size(); ++i) {
             if (fruits.get(i).equals("Orange")) {
                 fruits.set(i, "Grapefruit");
-
                 System.out.println("Edited list with fruits: " + fruits);
             }
         }

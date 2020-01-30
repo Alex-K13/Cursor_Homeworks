@@ -7,17 +7,17 @@ import hw8.user.UsersFilter;
 public class AppExecutor {
     public void runProgram() {
 
-        System.out.println("lambdaApp: ");
+        System.out.println("App of output greeting: ");
         new GreetingApp().outPhrase();
         System.out.println("\n");
 
-        System.out.println("userApp:");
+        System.out.println("user App:");
         UsersFilter users = new UsersFilter();
         users.buildUsersList();
         users.sortUsers();
         System.out.println("\n");
 
-        System.out.println("movieApp: ");
+        System.out.println("movie App: ");
         FilmsFilter films = new FilmsFilter();
         films.addTwoCollection();
         films.calculateAveragePrice();

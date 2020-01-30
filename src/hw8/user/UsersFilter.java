@@ -19,7 +19,7 @@ public class UsersFilter {
         users.add(new User("valera@gmail.com", LocalDate.of(2019, 11, 15), "Orange"));
         users.add(new User("yulia@gmail.com", LocalDate.of(2019, 12, 8), "Green"));
         users.add(new User("dmitriy@ukr.net", LocalDate.of(2019, 12, 11), "Blue"));
-//        return users;
+
     }
 
     public void sortUsers() {

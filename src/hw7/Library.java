@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Library {
-    private Map<LocalDate, String> books= new HashMap<>();
+    private Map<LocalDate, String> books = new HashMap<>();
 
     public void createBooks() {
         books.put(LocalDate.of(2019, 10, 19), "INNER ENGINEERING");
@@ -25,14 +25,14 @@ public class Library {
     }
 
     public void showDates() {
-        for (LocalDate k : books.keySet()) {
-            System.out.println(k);
+        for (LocalDate dates : books.keySet()) {
+            System.out.println(dates);
         }
     }
 
     public void showBooks() {
-        for (String v : books.values()) {
-            System.out.println(v);
+        for (String title : books.values()) {
+            System.out.println(title);
         }
     }
 }

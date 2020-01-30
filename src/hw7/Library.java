@@ -16,7 +16,7 @@ public class Library {
     }
 
     public void checkDate(LocalDate date) {
-        if (books.get(date) != null) {
+        if (books.containsKey(date)) {
             String book = books.get(date);
             System.out.println("Tittle of this book: " + book);
         } else {

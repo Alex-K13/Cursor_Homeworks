@@ -6,9 +6,9 @@ public class AppExecutor {
     private Library library = new Library();
 
     public void runProgram() {
-        library.createBooks();
+        library.createDateToBookName();
         library.checkDate(LocalDate.of(2019, 10, 20));
         library.showDates();
-        library.showBooks();
+        library.showDateToBookName();
     }
 }
